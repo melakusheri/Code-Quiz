@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description" content="Java Script Code Quiz">
+    <title>Code Quiz</title>
+
+   <!--Link to Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+
+    
+    <header class="d-flex p-3 justify-content-between font-weight-bolder">
+        <button type="button" id="view-scores-id" class="btn score text-info font-weight-bolder shadow-xl p-2">View
+            Highscores</button>
+        <div class="timer text-muted">Time: <span id="count">0</span></div>
+    </header>
+
+    <main class="container d-flex justify-content-center flex-column">
+
+        <section id="welcome-modal" class="justify-content-center">
+           
+            <article class="text-center">
+                <h1 class="text-info">Coding Quiz Challenge</h1>
+                <p class="text-justify text-muted mt-5 text-center">Try to answer the following code-related questions within 80 seconds. 
+                    Every incorrect answers will penalize your time by ten seconds </p>
+                <button type="button" id="start" class="btn btn-info mt-5 px-5">Start Quiz</button>
+            </article>
+        </section>
+
+        <!-- section to show and hide questions -->
+        <section class="d-flex flex-column align-items-center text-center" id="modal-section" hidden>
+            <!-- append the question -->
+            <div class="question-modal questions-style">
+            </div>
+            <div class="options-modal">
+            </div>
+            <div class="hit"></div>
+        </section>
+
+        <!-- section to show finish quiz page and enter the initials -->
+        <section class="card text-center shadow-lg d-none" id="modal-done">
+            <div class="mb-5 card-header shadow-sm">
+                <h1 class="text-info mb-2">All Done!</h1>
+                <p class="text-muted font-weight-bolder font-italic text-card">Your final score is: <span
+                        id="finalscore" class="badge badge-info text-wrap shadow-xl"></span>
+                </p>
+            </div>
+            <!-- form -->
+            <form class="card-body" onsubmit="return false">
+                <div class="form-inline">
+                    <label for="initials" class="mr-1 text-muted font-weight-bold">Enter your initials here: </label>
+                    <input type="text" class="form-control" id="initials" placeholder="Initials here">
+                    <button type="button" id="submit" class="btn btn-info px-4 ml-2">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- section to show the highscores and come back to the start -->
+        <section class="card d-none flex-column m-auto p-5 shadow-lg" id="highscoresPage">
+            <h3 class="card-title m-auto pb-4">Highscores</h3>
+            <div id="scores-list">
+            </div>
+            <div class="form mt-3 d-flex">
+                <button type="button" id="submitGoback" class="btn btn-info">Go back</button>
+                <button type="button" id="submitClear" class="btn btn-info ml-2">Clear
+                    Highscores</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>

@@ -34,5 +34,9 @@ This is a timed coding quiz with multiple-choice questions.
 ## License
 MIT
   
+## Screenshhot
+![code 1](https://user-images.githubusercontent.com/65136237/134779742-f6d4c693-98df-402c-bd44-db83e7bf6d21.PNG)
 
+![code 2](https://user-images.githubusercontent.com/65136237/134779743-14abb69b-e536-4ad2-9bc1-c86ca54d619d.PNG)
+![code 2](https://user-images.githubusercontent.com/65136237/134779745-9ae6251c-1396-4b95-aa1d-3cb04c0100c5.PNG)
 

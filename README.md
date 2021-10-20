@@ -17,8 +17,6 @@ This is a timed coding quiz with multiple-choice questions.
    * If the question is answered wrong, 10 seconds will be deducted to the timer
    * If the question is answered correctly, will add 1 to the score
  
- 
-
 ## Features
 * HTML
 * CSS
